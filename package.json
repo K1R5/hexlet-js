@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "lodash": "^4.17.21"    
+  },
+  "name": "hexlet-js",
+  "description": "Мой первый проект на Хекслете",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Zalogin Kirill",
+  "license": "ISC"
+}
