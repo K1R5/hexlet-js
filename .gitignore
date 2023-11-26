@@ -1,2 +1,5 @@
 # Игнорируется директория в любой директории проекта
 node_modules
+.eslintrc.cjs
+.eslintrc.yml
+.vscode
