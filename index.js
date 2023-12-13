@@ -1,5 +1,38 @@
-const fn = (a, b) => {
-  const c = a + b;
-  return c;
+const enlargeArrayImage = (arr) => {
+  return arr.map( (valueOne) => {
+
+    return valueOne.map( (valueTwo) => {
+      const dubleValues = [];
+      dubleValues.push(valueTwo);
+      dubleValues.push(valueTwo);
+      return dubleValues;
+    })
+    .flat();      
+  })
+  .reduce((acc, arr) => {
+    acc.push(arr);
+    acc.push(arr);
+    return acc;
+  }, []);  
 };
-fn(1, 2);
+
+const arr = [
+  ['*', '*', '*', '*'],
+  ['*', ' ', ' ', '*'],
+  ['*', ' ', ' ', '*'],
+  ['*', '*', '*', '*'],
+];
+// ****
+// *  *
+// *  *
+// ****
+ 
+console.log(enlargeArrayImage(arr));
+// ********
+// ********
+// **    **
+// **    **
+// **    **
+// **    **
+// ********
+// ********
